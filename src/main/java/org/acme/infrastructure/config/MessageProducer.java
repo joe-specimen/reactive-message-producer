@@ -1,4 +1,4 @@
-package org.acme;
+package org.acme.infrastructure.config;
 
 import io.quarkus.runtime.ShutdownEvent;
 import io.quarkus.runtime.StartupEvent;
@@ -15,7 +15,7 @@ import org.eclipse.microprofile.reactive.messaging.Emitter;
 
 @ApplicationScoped
 @Log
-public class MessagingApplication {
+public class MessageProducer {
 
    @Inject
    @Channel("create-person")
